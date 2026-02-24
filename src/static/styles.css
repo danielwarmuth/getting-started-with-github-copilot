@@ -1,3 +1,53 @@
+/* Participants section styling */
+.participants-section {
+  margin-top: 1em;
+  background: #f7f7fa;
+  border-radius: 8px;
+  padding: 0.75em 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+.participants-section strong {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #2a3a5e;
+  font-size: 1em;
+}
+.participants-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #3a3a3a;
+  font-size: 0.97em;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 0.1em;
+  border-bottom: 1px solid #ececf0;
+}
+.participant-item:last-child {
+  border-bottom: none;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #e74c3c;
+  margin-left: 0.7em;
+  font-size: 1.1em;
+  transition: color 0.2s;
+  user-select: none;
+}
+.delete-participant:hover {
+  color: #c0392b;
+}
+.participants-section.empty {
+  color: #888;
+  font-style: italic;
+  background: #f9f9fb;
+  box-shadow: none;
+}
 * {
   box-sizing: border-box;
   margin: 0;
